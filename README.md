@@ -1,12 +1,14 @@
-# me-mechanic
+# ![me / mechanic](assets/wordmark.svg)
 
-Me-mechanic makes learning about car parts simpler and more fun. Explore a car in 3D, see what its components do, and take the assembly apart to understand how it fits together.
+**me / mechanic** makes learning about car parts simpler and more fun. Explore a car in 3D, see what its components do, and take the assembly apart to understand how it fits together.
 
-The name is inspired by Kevin Malone from *The Office*:
+The name is inspired by Kevin Malone from *The Office* and his friendship with his mechanic:
 
-![Kevin Malone saying “Me mechanic not speak English”](me-mechanic.png)
+![Kevin Malone saying “Me mechanic not speak English”](assets/me-mechanic.png)
 
 > “Me mechanic not speak English. But he know what me mean when me say ‘car no go’, and we best friends. So me think: why waste time, say lot word when few word do trick?”
+
+![An exploded view of the Aventador in the me / mechanic app](assets/aventador-peek.png)
 
 The first study is a reconstructed Lamborghini Aventador LP 700–4, with 431 selectable component groups.
 
