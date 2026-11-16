@@ -1,0 +1,8577 @@
+{
+ "model": "Lamborghini Aventador LP 700-4 \u2014 reconstructed anatomy model",
+ "provenance": "Procedurally modelled in Blender from published dimensions and specifications; not OEM CAD.",
+ "units": "metres, Y up, nose +Z, ground at y=0",
+ "zones": [
+  "Body",
+  "Chassis",
+  "Engine",
+  "Internals",
+  "Transmission",
+  "Suspension",
+  "Brakes",
+  "Wheels",
+  "Aero",
+  "Interior",
+  "Electrical"
+ ],
+ "systems": {
+  "01_Exterior_Body": "Body panels, glass, lamps and the hinged covers.",
+  "02_Chassis_Monocoque": "Carbon-fibre passenger cell with bolted aluminium front and rear frames.",
+  "03_Powertrain": "L539 V12, its ancillaries, the ISR transmission and the all-wheel-drive driveline.",
+  "04_Suspension_Brakes": "Pushrod double wishbones, inboard dampers, steering, brakes and wheels.",
+  "05_Aero_Underbody": "Splitter, flat floor, diffuser, arch liners and heat shields.",
+  "06_Interior": "Cockpit: seats, steering wheel, dashboard and controls.",
+  "07_Electrical": "Battery, control units and main cabling."
+ },
+ "parts": [
+  {
+   "id": "bumper",
+   "name": "Front bumper",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Arrow-shaped nose of the wedge profile; aluminium crash structure sits behind it. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.0,
+    0.45,
+    0.787
+   ]
+  },
+  {
+   "id": "frontIntakeL",
+   "name": "Front air intake \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Large lower opening at each front corner, flanking the nose. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.673,
+    0.45,
+    0.787
+   ]
+  },
+  {
+   "id": "frontIntakeR",
+   "name": "Front air intake \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Large lower opening at each front corner, flanking the nose. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.673,
+    0.45,
+    0.787
+   ]
+  },
+  {
+   "id": "frontGrille",
+   "name": "Lower front grille",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Mesh closing the front fascia. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0.1,
+    0.9
+   ]
+  },
+  {
+   "id": "frontLid",
+   "name": "Front luggage compartment lid",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Lid over the front luggage bay, hinged at the windscreen base. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.0,
+    0.632,
+    0.521
+   ],
+   "kin": {
+    "type": "hinge",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "angle": -0.9,
+    "trigger": "frontLid"
+   }
+  },
+  {
+   "id": "fenderL",
+   "name": "Front fender \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Wraps the front wheel; its crease runs from headlamp to door. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.799,
+    0.559,
+    0.521
+   ]
+  },
+  {
+   "id": "fenderR",
+   "name": "Front fender \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Wraps the front wheel; its crease runs from headlamp to door. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.799,
+    0.559,
+    0.521
+   ]
+  },
+  {
+   "id": "headlampL",
+   "name": "Bi-xenon headlamp \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Headlamp unit at the front corner with LED daytime running lights. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.638,
+    0.573,
+    0.687
+   ]
+  },
+  {
+   "id": "headlampR",
+   "name": "Bi-xenon headlamp \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Headlamp unit at the front corner with LED daytime running lights. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.638,
+    0.573,
+    0.687
+   ]
+  },
+  {
+   "id": "drlL",
+   "name": "LED daytime running light \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Y-shaped LED light signature inside the headlamp.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    -0.9,
+    0.5,
+    0.7
+   ]
+  },
+  {
+   "id": "drlR",
+   "name": "LED daytime running light \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Y-shaped LED light signature inside the headlamp.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0.9,
+    0.5,
+    0.7
+   ]
+  },
+  {
+   "id": "splitter",
+   "name": "Front splitter",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Front_End",
+   "summary": "Carbon blade under the nose that manages air flowing beneath the car.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.3,
+    0.8
+   ]
+  },
+  {
+   "id": "windshield",
+   "name": "Windscreen",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Steeply raked screen continuing the line of the front lid. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Laminated / tempered glass",
+   "tone": "glass",
+   "blockedBy": [],
+   "vector": [
+    0.0,
+    0.91,
+    0.184
+   ]
+  },
+  {
+   "id": "roof",
+   "name": "Roof panel",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Low roof over the carbon-fibre passenger cell. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.0,
+    1.068,
+    -0.078
+   ]
+  },
+  {
+   "id": "doorGlassL",
+   "name": "Door window \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Door glass; drops slightly when the door opens. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Laminated / tempered glass",
+   "tone": "glass",
+   "blockedBy": [],
+   "vector": [
+    -0.9,
+    0.6,
+    0.1
+   ],
+   "kin": {
+    "type": "hinge",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "angle": 1.2,
+    "trigger": "doors"
+   }
+  },
+  {
+   "id": "doorL",
+   "name": "Scissor door \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Door hinged at the front that swings upward rather than outward. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.9,
+    0.6,
+    0.1
+   ],
+   "kin": {
+    "type": "hinge",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "angle": 1.2,
+    "trigger": "doors"
+   }
+  },
+  {
+   "id": "mirrorL",
+   "name": "Door mirror \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Exterior mirror on a slim stalk at the front of the door.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -1.1,
+    0.6,
+    0.2
+   ],
+   "kin": {
+    "type": "hinge",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "angle": 1.2,
+    "trigger": "doors"
+   }
+  },
+  {
+   "id": "doorGlassR",
+   "name": "Door window \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Door glass; drops slightly when the door opens. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Laminated / tempered glass",
+   "tone": "glass",
+   "blockedBy": [],
+   "vector": [
+    0.9,
+    0.6,
+    0.1
+   ],
+   "kin": {
+    "type": "hinge",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "angle": 1.2,
+    "trigger": "doors"
+   }
+  },
+  {
+   "id": "doorR",
+   "name": "Scissor door \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Door hinged at the front that swings upward rather than outward. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.9,
+    0.6,
+    0.1
+   ],
+   "kin": {
+    "type": "hinge",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "angle": 1.2,
+    "trigger": "doors"
+   }
+  },
+  {
+   "id": "mirrorR",
+   "name": "Door mirror \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Exterior mirror on a slim stalk at the front of the door.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    1.1,
+    0.6,
+    0.2
+   ],
+   "kin": {
+    "type": "hinge",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "angle": 1.2,
+    "trigger": "doors"
+   }
+  },
+  {
+   "id": "sillL",
+   "name": "Carbon side sill \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Lower sill along the passenger cell between the wheels. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.879,
+    0.45,
+    -0.017
+   ]
+  },
+  {
+   "id": "sillR",
+   "name": "Carbon side sill \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Lower sill along the passenger cell between the wheels. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.879,
+    0.45,
+    -0.017
+   ]
+  },
+  {
+   "id": "wiper",
+   "name": "Windscreen wiper",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Cabin",
+   "summary": "Single wiper arm parked at the base of the windscreen.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "id": "glassCover",
+   "name": "Hinged glass engine cover",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Click to open. The glass cover with hexagonal louvres shows the V12 beneath it. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Laminated / tempered glass",
+   "tone": "glass",
+   "blockedBy": [],
+   "vector": [
+    0,
+    1.2,
+    -0.3
+   ],
+   "kin": {
+    "type": "hinge",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "angle": 1.15,
+    "trigger": "cover"
+   }
+  },
+  {
+   "id": "coverStrutL",
+   "name": "Engine cover gas strut \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Gas strut that holds the glass engine cover open.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    -0.4,
+    1.0,
+    -0.3
+   ]
+  },
+  {
+   "id": "coverStrutR",
+   "name": "Engine cover gas strut \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Gas strut that holds the glass engine cover open.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0.4,
+    1.0,
+    -0.3
+   ]
+  },
+  {
+   "id": "louversL",
+   "name": "Engine bay cooling louvres \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Louvred panel beside the glass cover lets heat escape from the engine bay. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.616,
+    0.921,
+    -0.42
+   ]
+  },
+  {
+   "id": "louversR",
+   "name": "Engine bay cooling louvres \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Louvred panel beside the glass cover lets heat escape from the engine bay. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.616,
+    0.921,
+    -0.42
+   ]
+  },
+  {
+   "id": "slatL0",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "slatL1",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "slatL2",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "slatL3",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "slatL4",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "slatR0",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "slatR1",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "slatR2",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "slatR3",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "slatR4",
+   "name": "Cooling louvre blade",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Individual blade over the engine bay vent.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.5,
+    1.0,
+    -0.2
+   ]
+  },
+  {
+   "id": "activeIntakeL",
+   "name": "Active shoulder air intake \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Upper intake that opens with temperature and speed to feed the engine airboxes. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.826,
+    0.846,
+    -0.273
+   ]
+  },
+  {
+   "id": "activeIntakeR",
+   "name": "Active shoulder air intake \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Upper intake that opens with temperature and speed to feed the engine airboxes. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.826,
+    0.846,
+    -0.273
+   ]
+  },
+  {
+   "id": "sideIntakeL",
+   "name": "Side radiator intake \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Large scoop behind the door that feeds the side-mounted radiators. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.904,
+    0.676,
+    -0.273
+   ]
+  },
+  {
+   "id": "sideIntakeR",
+   "name": "Side radiator intake \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Large scoop behind the door that feeds the side-mounted radiators. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.904,
+    0.676,
+    -0.273
+   ]
+  },
+  {
+   "id": "rearSkirtL",
+   "name": "Rear side skirt \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Lower panel between the side intake and the rear wheel. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "SMC composite panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.906,
+    0.45,
+    -0.273
+   ]
+  },
+  {
+   "id": "rearSkirtR",
+   "name": "Rear side skirt \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Lower panel between the side intake and the rear wheel. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "SMC composite panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.906,
+    0.45,
+    -0.273
+   ]
+  },
+  {
+   "id": "haunchL",
+   "name": "Rear haunch \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Wide rear wing over the driven rear wheel. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "SMC composite panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.868,
+    0.684,
+    -0.545
+   ]
+  },
+  {
+   "id": "haunchR",
+   "name": "Rear haunch \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Wide rear wing over the driven rear wheel. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "SMC composite panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.868,
+    0.684,
+    -0.545
+   ]
+  },
+  {
+   "id": "tailL",
+   "name": "Rear bumper \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Rear corner of the body wrapping toward the open rear fascia. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    -0.826,
+    0.568,
+    -0.778
+   ]
+  },
+  {
+   "id": "tailR",
+   "name": "Rear bumper \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Rear corner of the body wrapping toward the open rear fascia. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.826,
+    0.568,
+    -0.778
+   ]
+  },
+  {
+   "id": "deck",
+   "name": "Rear deck",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Deck behind the engine cover that carries the active wing. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Painted composite / aluminium panel",
+   "tone": "paint",
+   "blockedBy": [],
+   "vector": [
+    0.0,
+    0.837,
+    -0.735
+   ]
+  },
+  {
+   "id": "rearFascia",
+   "name": "Rear grille",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Open mesh rear fascia that lets hot air out of the engine bay. Surface reconstructed from published dimensions; contours are illustrative.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0.1,
+    -0.9
+   ]
+  },
+  {
+   "id": "wing",
+   "name": "Active rear wing",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Three-position rear wing; it rises with speed to add downforce.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0.8,
+    -0.4
+   ]
+  },
+  {
+   "id": "wingStrutL",
+   "name": "Wing actuator \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Electric actuator that raises and tilts the wing.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    -0.2,
+    0.7,
+    -0.4
+   ]
+  },
+  {
+   "id": "taillampL",
+   "name": "LED rear lamp \u00b7 left",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Y-shaped LED rear lamp set into the rear fascia.",
+   "material": "Tinted polycarbonate lens",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.4,
+    0.2,
+    -0.9
+   ]
+  },
+  {
+   "id": "wingStrutR",
+   "name": "Wing actuator \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Electric actuator that raises and tilts the wing.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0.2,
+    0.7,
+    -0.4
+   ]
+  },
+  {
+   "id": "taillampR",
+   "name": "LED rear lamp \u00b7 right",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "Y-shaped LED rear lamp set into the rear fascia.",
+   "material": "Tinted polycarbonate lens",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.4,
+    0.2,
+    -0.9
+   ]
+  },
+  {
+   "id": "brakeLight",
+   "name": "Third brake light",
+   "zone": "Body",
+   "system": "01_Exterior_Body",
+   "assembly": "Rear_End",
+   "summary": "High-mounted LED brake light below the wing.",
+   "material": "Tinted polycarbonate lens",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0.6,
+    -0.8
+   ]
+  },
+  {
+   "id": "tubFloor",
+   "name": "Monocoque floor",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Carbon_Monocoque",
+   "summary": "Floor of the one-piece carbon-fibre tub, cured as a single structure.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.6,
+    0
+   ]
+  },
+  {
+   "id": "tubSillL",
+   "name": "Monocoque sill box \u00b7 left",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Carbon_Monocoque",
+   "summary": "Deep structural sill that carries side-impact and torsional loads.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.5,
+    -0.4,
+    0
+   ]
+  },
+  {
+   "id": "aPillarL",
+   "name": "A-pillar \u00b7 left",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Carbon_Monocoque",
+   "summary": "Windscreen pillar and roof rail moulded into the tub.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.4,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "tubSillR",
+   "name": "Monocoque sill box \u00b7 right",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Carbon_Monocoque",
+   "summary": "Deep structural sill that carries side-impact and torsional loads.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.5,
+    -0.4,
+    0
+   ]
+  },
+  {
+   "id": "aPillarR",
+   "name": "A-pillar \u00b7 right",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Carbon_Monocoque",
+   "summary": "Windscreen pillar and roof rail moulded into the tub.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.4,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "tunnel",
+   "name": "Transmission tunnel",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Carbon_Monocoque",
+   "summary": "Central spine of the tub; houses the gearbox and the front propeller shaft.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.6,
+    0
+   ]
+  },
+  {
+   "id": "frontBulkhead",
+   "name": "Front bulkhead",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Carbon_Monocoque",
+   "summary": "Forward wall of the tub; the front frame bolts here.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.6,
+    0
+   ]
+  },
+  {
+   "id": "firewall",
+   "name": "Rear bulkhead / firewall",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Carbon_Monocoque",
+   "summary": "Separates cabin from engine bay; the bellhousing passes through its lower centre.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.6,
+    0
+   ]
+  },
+  {
+   "id": "roofFrame",
+   "name": "Roof cross-member",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Carbon_Monocoque",
+   "summary": "Roll-over hoop at the rear of the roof.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.6,
+    0
+   ]
+  },
+  {
+   "id": "frontRailL",
+   "name": "Front frame rail \u00b7 left",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Front_Frame",
+   "summary": "Aluminium rail carrying the front suspension and crash structure.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    0.9
+   ]
+  },
+  {
+   "id": "crashBoxL",
+   "name": "Front crash box \u00b7 left",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Front_Frame",
+   "summary": "Deformable aluminium box that absorbs frontal impact energy.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    0.9
+   ]
+  },
+  {
+   "id": "frontRailR",
+   "name": "Front frame rail \u00b7 right",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Front_Frame",
+   "summary": "Aluminium rail carrying the front suspension and crash structure.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    0.9
+   ]
+  },
+  {
+   "id": "crashBoxR",
+   "name": "Front crash box \u00b7 right",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Front_Frame",
+   "summary": "Deformable aluminium box that absorbs frontal impact energy.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    0.9
+   ]
+  },
+  {
+   "id": "frontCrossRear",
+   "name": "Front frame cross-member \u00b7 rear",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Front_Frame",
+   "summary": "Ties the front rails together.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    0.9
+   ]
+  },
+  {
+   "id": "frontCrossMiddle",
+   "name": "Front frame cross-member \u00b7 middle",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Front_Frame",
+   "summary": "Ties the front rails together.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    0.9
+   ]
+  },
+  {
+   "id": "frontCrossFront",
+   "name": "Front frame cross-member \u00b7 front",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Front_Frame",
+   "summary": "Ties the front rails together.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    0.9
+   ]
+  },
+  {
+   "id": "frontTower",
+   "name": "Front damper mount beam",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Front_Frame",
+   "summary": "Upper beam on which the horizontal front dampers and rockers are mounted.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    0.9
+   ]
+  },
+  {
+   "id": "rearRailL",
+   "name": "Rear frame rail \u00b7 left",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Aluminium rail carrying the engine, rear suspension and crash structure.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    -0.9
+   ]
+  },
+  {
+   "id": "rearUpperRailL",
+   "name": "Rear upper frame rail \u00b7 left",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Upper rail joining the firewall to the rear crash structure.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    -0.9
+   ]
+  },
+  {
+   "id": "engineMountL",
+   "name": "Engine mount \u00b7 left",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Elastomer mount isolating the V12 from the rear frame.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [],
+   "vector": [
+    -0.5,
+    -0.3,
+    0
+   ]
+  },
+  {
+   "id": "rearRailR",
+   "name": "Rear frame rail \u00b7 right",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Aluminium rail carrying the engine, rear suspension and crash structure.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    -0.9
+   ]
+  },
+  {
+   "id": "rearUpperRailR",
+   "name": "Rear upper frame rail \u00b7 right",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Upper rail joining the firewall to the rear crash structure.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    -0.9
+   ]
+  },
+  {
+   "id": "engineMountR",
+   "name": "Engine mount \u00b7 right",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Elastomer mount isolating the V12 from the rear frame.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [],
+   "vector": [
+    0.5,
+    -0.3,
+    0
+   ]
+  },
+  {
+   "id": "rearCrossFront",
+   "name": "Rear frame cross-member \u00b7 front",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Ties the rear rails together.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    -0.9
+   ]
+  },
+  {
+   "id": "rearCrossMiddle",
+   "name": "Rear frame cross-member \u00b7 middle",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Ties the rear rails together.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    -0.9
+   ]
+  },
+  {
+   "id": "rearCrossRear",
+   "name": "Rear frame cross-member \u00b7 rear",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Ties the rear rails together.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    -0.9
+   ]
+  },
+  {
+   "id": "rearTower",
+   "name": "Rear damper mount beam",
+   "zone": "Chassis",
+   "system": "02_Chassis_Monocoque",
+   "assembly": "Rear_Frame",
+   "summary": "Upper beam carrying the horizontal rear dampers above the gearbox output.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0,
+    -0.9
+   ]
+  },
+  {
+   "id": "blockA",
+   "name": "Cylinder block \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Half of the aluminium crankcase and cylinder bank. The L539 has a 60\u00b0 V, 95 mm bores and an open-deck crankcase with steel liners.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.8,
+    0.25,
+    0
+   ],
+   "spec": "Bank angle 60\u00b0, 6 cylinders per bank"
+  },
+  {
+   "id": "blockB",
+   "name": "Cylinder block \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Half of the aluminium crankcase and cylinder bank. The L539 has a 60\u00b0 V, 95 mm bores and an open-deck crankcase with steel liners.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.8,
+    0.25,
+    0
+   ],
+   "spec": "Bank angle 60\u00b0, 6 cylinders per bank"
+  },
+  {
+   "id": "bedplate",
+   "name": "Bedplate / main bearing girdle",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Stiff lower crankcase that carries the seven main bearing caps.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0,
+    -0.4,
+    0
+   ]
+  },
+  {
+   "id": "sump",
+   "name": "Dry-sump pan",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Shallow dry-sump pan lets the crank sit low; scavenge pumps return oil to a separate tank.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "floorPan"
+   ],
+   "vector": [
+    0,
+    -0.8,
+    0
+   ]
+  },
+  {
+   "id": "mainCap1",
+   "name": "Main bearing cap 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Clamps the crankshaft main journal into the block.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "bedplate"
+   ],
+   "vector": [
+    0,
+    -0.55,
+    0
+   ]
+  },
+  {
+   "id": "mainCap2",
+   "name": "Main bearing cap 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Clamps the crankshaft main journal into the block.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "bedplate"
+   ],
+   "vector": [
+    0,
+    -0.55,
+    0
+   ]
+  },
+  {
+   "id": "mainCap3",
+   "name": "Main bearing cap 3",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Clamps the crankshaft main journal into the block.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "bedplate"
+   ],
+   "vector": [
+    0,
+    -0.55,
+    0
+   ]
+  },
+  {
+   "id": "mainCap4",
+   "name": "Main bearing cap 4",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Clamps the crankshaft main journal into the block.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "bedplate"
+   ],
+   "vector": [
+    0,
+    -0.55,
+    0
+   ]
+  },
+  {
+   "id": "mainCap5",
+   "name": "Main bearing cap 5",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Clamps the crankshaft main journal into the block.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "bedplate"
+   ],
+   "vector": [
+    0,
+    -0.55,
+    0
+   ]
+  },
+  {
+   "id": "mainCap6",
+   "name": "Main bearing cap 6",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Clamps the crankshaft main journal into the block.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "bedplate"
+   ],
+   "vector": [
+    0,
+    -0.55,
+    0
+   ]
+  },
+  {
+   "id": "mainCap7",
+   "name": "Main bearing cap 7",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Clamps the crankshaft main journal into the block.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "bedplate"
+   ],
+   "vector": [
+    0,
+    -0.55,
+    0
+   ]
+  },
+  {
+   "id": "linerA1",
+   "name": "Cylinder liner 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockA"
+   ],
+   "vector": [
+    0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerA2",
+   "name": "Cylinder liner 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockA"
+   ],
+   "vector": [
+    0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerA3",
+   "name": "Cylinder liner 3",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockA"
+   ],
+   "vector": [
+    0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerA4",
+   "name": "Cylinder liner 4",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockA"
+   ],
+   "vector": [
+    0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerA5",
+   "name": "Cylinder liner 5",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockA"
+   ],
+   "vector": [
+    0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerA6",
+   "name": "Cylinder liner 6",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockA"
+   ],
+   "vector": [
+    0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerB1",
+   "name": "Cylinder liner 7",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockB"
+   ],
+   "vector": [
+    -0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerB2",
+   "name": "Cylinder liner 8",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockB"
+   ],
+   "vector": [
+    -0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerB3",
+   "name": "Cylinder liner 9",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockB"
+   ],
+   "vector": [
+    -0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerB4",
+   "name": "Cylinder liner 10",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockB"
+   ],
+   "vector": [
+    -0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerB5",
+   "name": "Cylinder liner 11",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockB"
+   ],
+   "vector": [
+    -0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "linerB6",
+   "name": "Cylinder liner 12",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Engine_Block",
+   "summary": "Bore surface the piston rings seal against; 95 mm diameter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "blockB"
+   ],
+   "vector": [
+    -0.25,
+    0.433,
+    0.0
+   ]
+  },
+  {
+   "id": "headA",
+   "name": "Cylinder head \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Four-valve aluminium head with twin overhead camshafts; intake ports face the V, exhaust ports face out.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverA",
+    "plenumA"
+   ],
+   "vector": [
+    0.5,
+    1.066,
+    0.0
+   ]
+  },
+  {
+   "id": "camCoverA",
+   "name": "Camshaft cover \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Ribbed cam cover closing the valvetrain; coil packs pass through it.",
+   "material": "Painted alloy",
+   "tone": "accent",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.7,
+    1.512,
+    0.0
+   ]
+  },
+  {
+   "id": "camAIntake",
+   "name": "Intake camshaft \u00b7 bank A",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Opens the intake valves; turns at half crank speed via the timing chain.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverA"
+   ],
+   "vector": [
+    0.6,
+    1.039,
+    0.0
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 0.5
+   }
+  },
+  {
+   "id": "camSprocketAIntake",
+   "name": "Cam sprocket \u00b7 bank A intake",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Chain sprocket on the gearbox-side end of the camshaft.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "timingCover"
+   ],
+   "vector": [
+    0.5,
+    0.866,
+    0.3
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 0.5
+   }
+  },
+  {
+   "id": "camAExhaust",
+   "name": "Exhaust camshaft \u00b7 bank A",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Opens the exhaust valves; turns at half crank speed via the timing chain.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverA"
+   ],
+   "vector": [
+    0.6,
+    1.039,
+    0.0
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 0.5
+   }
+  },
+  {
+   "id": "camSprocketAExhaust",
+   "name": "Cam sprocket \u00b7 bank A exhaust",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Chain sprocket on the gearbox-side end of the camshaft.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "timingCover"
+   ],
+   "vector": [
+    0.5,
+    0.866,
+    0.3
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 0.5
+   }
+  },
+  {
+   "id": "timingChainA",
+   "name": "Timing chain \u00b7 bank A",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Drives the two camshafts of this bank from the crankshaft.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "timingCover"
+   ],
+   "vector": [
+    0.4,
+    0.4,
+    0.5
+   ]
+  },
+  {
+   "id": "valveA11",
+   "name": "Cylinder 1 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA12",
+   "name": "Cylinder 1 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA13",
+   "name": "Cylinder 1 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA14",
+   "name": "Cylinder 1 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsA1",
+   "name": "Valve springs \u00b7 cylinder 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverA"
+   ],
+   "vector": [
+    0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA21",
+   "name": "Cylinder 2 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA22",
+   "name": "Cylinder 2 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA23",
+   "name": "Cylinder 2 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA24",
+   "name": "Cylinder 2 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsA2",
+   "name": "Valve springs \u00b7 cylinder 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverA"
+   ],
+   "vector": [
+    0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA31",
+   "name": "Cylinder 3 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA32",
+   "name": "Cylinder 3 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA33",
+   "name": "Cylinder 3 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA34",
+   "name": "Cylinder 3 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsA3",
+   "name": "Valve springs \u00b7 cylinder 3",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverA"
+   ],
+   "vector": [
+    0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA41",
+   "name": "Cylinder 4 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA42",
+   "name": "Cylinder 4 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA43",
+   "name": "Cylinder 4 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA44",
+   "name": "Cylinder 4 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsA4",
+   "name": "Valve springs \u00b7 cylinder 4",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverA"
+   ],
+   "vector": [
+    0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA51",
+   "name": "Cylinder 5 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA52",
+   "name": "Cylinder 5 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA53",
+   "name": "Cylinder 5 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA54",
+   "name": "Cylinder 5 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsA5",
+   "name": "Valve springs \u00b7 cylinder 5",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverA"
+   ],
+   "vector": [
+    0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA61",
+   "name": "Cylinder 6 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA62",
+   "name": "Cylinder 6 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAIntake"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA63",
+   "name": "Cylinder 6 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveA64",
+   "name": "Cylinder 6 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camAExhaust"
+   ],
+   "vector": [
+    0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsA6",
+   "name": "Valve springs \u00b7 cylinder 6",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverA"
+   ],
+   "vector": [
+    0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "headB",
+   "name": "Cylinder head \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Four-valve aluminium head with twin overhead camshafts; intake ports face the V, exhaust ports face out.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverB",
+    "plenumB"
+   ],
+   "vector": [
+    -0.5,
+    1.066,
+    0.0
+   ]
+  },
+  {
+   "id": "camCoverB",
+   "name": "Camshaft cover \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Ribbed cam cover closing the valvetrain; coil packs pass through it.",
+   "material": "Painted alloy",
+   "tone": "accent",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.7,
+    1.512,
+    0.0
+   ]
+  },
+  {
+   "id": "camBIntake",
+   "name": "Intake camshaft \u00b7 bank B",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Opens the intake valves; turns at half crank speed via the timing chain.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverB"
+   ],
+   "vector": [
+    -0.6,
+    1.039,
+    0.0
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 0.5
+   }
+  },
+  {
+   "id": "camSprocketBIntake",
+   "name": "Cam sprocket \u00b7 bank B intake",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Chain sprocket on the gearbox-side end of the camshaft.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "timingCover"
+   ],
+   "vector": [
+    -0.5,
+    0.866,
+    0.3
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 0.5
+   }
+  },
+  {
+   "id": "camBExhaust",
+   "name": "Exhaust camshaft \u00b7 bank B",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Opens the exhaust valves; turns at half crank speed via the timing chain.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverB"
+   ],
+   "vector": [
+    -0.6,
+    1.039,
+    0.0
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 0.5
+   }
+  },
+  {
+   "id": "camSprocketBExhaust",
+   "name": "Cam sprocket \u00b7 bank B exhaust",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Chain sprocket on the gearbox-side end of the camshaft.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "timingCover"
+   ],
+   "vector": [
+    -0.5,
+    0.866,
+    0.3
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 0.5
+   }
+  },
+  {
+   "id": "timingChainB",
+   "name": "Timing chain \u00b7 bank B",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Drives the two camshafts of this bank from the crankshaft.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "timingCover"
+   ],
+   "vector": [
+    -0.4,
+    0.4,
+    0.5
+   ]
+  },
+  {
+   "id": "valveB11",
+   "name": "Cylinder 7 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB12",
+   "name": "Cylinder 7 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB13",
+   "name": "Cylinder 7 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB14",
+   "name": "Cylinder 7 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsB1",
+   "name": "Valve springs \u00b7 cylinder 7",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverB"
+   ],
+   "vector": [
+    -0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB21",
+   "name": "Cylinder 8 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB22",
+   "name": "Cylinder 8 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB23",
+   "name": "Cylinder 8 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB24",
+   "name": "Cylinder 8 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsB2",
+   "name": "Valve springs \u00b7 cylinder 8",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverB"
+   ],
+   "vector": [
+    -0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB31",
+   "name": "Cylinder 9 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB32",
+   "name": "Cylinder 9 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB33",
+   "name": "Cylinder 9 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB34",
+   "name": "Cylinder 9 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsB3",
+   "name": "Valve springs \u00b7 cylinder 9",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverB"
+   ],
+   "vector": [
+    -0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB41",
+   "name": "Cylinder 10 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB42",
+   "name": "Cylinder 10 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB43",
+   "name": "Cylinder 10 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB44",
+   "name": "Cylinder 10 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsB4",
+   "name": "Valve springs \u00b7 cylinder 10",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverB"
+   ],
+   "vector": [
+    -0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB51",
+   "name": "Cylinder 11 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB52",
+   "name": "Cylinder 11 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB53",
+   "name": "Cylinder 11 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB54",
+   "name": "Cylinder 11 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsB5",
+   "name": "Valve springs \u00b7 cylinder 11",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverB"
+   ],
+   "vector": [
+    -0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB61",
+   "name": "Cylinder 12 \u00b7 intake valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB62",
+   "name": "Cylinder 12 \u00b7 intake valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBIntake"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB63",
+   "name": "Cylinder 12 \u00b7 exhaust valve 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveB64",
+   "name": "Cylinder 12 \u00b7 exhaust valve 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "One of four valves per cylinder. Intake valves admit air from the V; exhaust valves release gas outward.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camBExhaust"
+   ],
+   "vector": [
+    -0.45,
+    0.779,
+    0.0
+   ]
+  },
+  {
+   "id": "valveSpringsB6",
+   "name": "Valve springs \u00b7 cylinder 12",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Close the four valves of this cylinder after each cam lobe passes.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "camCoverB"
+   ],
+   "vector": [
+    -0.5,
+    0.866,
+    0.0
+   ]
+  },
+  {
+   "id": "timingCover",
+   "name": "Timing chain cover",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cylinder_Heads",
+   "summary": "Encloses the cam drive chains at the gearbox end of the engine.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0,
+    0.3,
+    0.6
+   ]
+  },
+  {
+   "id": "plugA1",
+   "name": "Spark plug 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilA1"
+   ],
+   "vector": [
+    0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilA1",
+   "name": "Ignition coil 1",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorA1",
+   "name": "Fuel injector 1",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailA"
+   ],
+   "vector": [
+    0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugA2",
+   "name": "Spark plug 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilA2"
+   ],
+   "vector": [
+    0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilA2",
+   "name": "Ignition coil 2",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorA2",
+   "name": "Fuel injector 2",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailA"
+   ],
+   "vector": [
+    0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugA3",
+   "name": "Spark plug 3",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilA3"
+   ],
+   "vector": [
+    0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilA3",
+   "name": "Ignition coil 3",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorA3",
+   "name": "Fuel injector 3",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailA"
+   ],
+   "vector": [
+    0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugA4",
+   "name": "Spark plug 4",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilA4"
+   ],
+   "vector": [
+    0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilA4",
+   "name": "Ignition coil 4",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorA4",
+   "name": "Fuel injector 4",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailA"
+   ],
+   "vector": [
+    0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugA5",
+   "name": "Spark plug 5",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilA5"
+   ],
+   "vector": [
+    0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilA5",
+   "name": "Ignition coil 5",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorA5",
+   "name": "Fuel injector 5",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailA"
+   ],
+   "vector": [
+    0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugA6",
+   "name": "Spark plug 6",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilA6"
+   ],
+   "vector": [
+    0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilA6",
+   "name": "Ignition coil 6",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorA6",
+   "name": "Fuel injector 6",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailA"
+   ],
+   "vector": [
+    0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "fuelRailA",
+   "name": "Fuel rail \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Feeds pressurised fuel to the six injectors of this bank.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.7,
+    1.612,
+    0.0
+   ]
+  },
+  {
+   "id": "plugB1",
+   "name": "Spark plug 7",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilB1"
+   ],
+   "vector": [
+    -0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilB1",
+   "name": "Ignition coil 7",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorB1",
+   "name": "Fuel injector 7",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailB"
+   ],
+   "vector": [
+    -0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugB2",
+   "name": "Spark plug 8",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilB2"
+   ],
+   "vector": [
+    -0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilB2",
+   "name": "Ignition coil 8",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorB2",
+   "name": "Fuel injector 8",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailB"
+   ],
+   "vector": [
+    -0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugB3",
+   "name": "Spark plug 9",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilB3"
+   ],
+   "vector": [
+    -0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilB3",
+   "name": "Ignition coil 9",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorB3",
+   "name": "Fuel injector 9",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailB"
+   ],
+   "vector": [
+    -0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugB4",
+   "name": "Spark plug 10",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilB4"
+   ],
+   "vector": [
+    -0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilB4",
+   "name": "Ignition coil 10",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorB4",
+   "name": "Fuel injector 10",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailB"
+   ],
+   "vector": [
+    -0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugB5",
+   "name": "Spark plug 11",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilB5"
+   ],
+   "vector": [
+    -0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilB5",
+   "name": "Ignition coil 11",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorB5",
+   "name": "Fuel injector 11",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailB"
+   ],
+   "vector": [
+    -0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "plugB6",
+   "name": "Spark plug 12",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Ignites the mixture at the centre of the four-valve combustion chamber.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [
+    "coilB6"
+   ],
+   "vector": [
+    -0.65,
+    1.126,
+    0.0
+   ]
+  },
+  {
+   "id": "coilB6",
+   "name": "Ignition coil 12",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Coil-on-plug unit; raises battery voltage to fire the spark plug below it.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.8,
+    1.586,
+    0.0
+   ]
+  },
+  {
+   "id": "injectorB6",
+   "name": "Fuel injector 12",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Port injector spraying fuel into the intake runner just ahead of the valves.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelRailB"
+   ],
+   "vector": [
+    -0.6,
+    1.439,
+    0.0
+   ]
+  },
+  {
+   "id": "fuelRailB",
+   "name": "Fuel rail \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Ignition_Fuel",
+   "summary": "Feeds pressurised fuel to the six injectors of this bank.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.7,
+    1.612,
+    0.0
+   ]
+  },
+  {
+   "id": "plenumA",
+   "name": "Intake plenum \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Collector feeding six runners; the two plenums sit side by side in the V.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.35,
+    1.75,
+    0
+   ]
+  },
+  {
+   "id": "runnerA1",
+   "name": "Intake runner 1",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerA2",
+   "name": "Intake runner 2",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerA3",
+   "name": "Intake runner 3",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerA4",
+   "name": "Intake runner 4",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerA5",
+   "name": "Intake runner 5",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerA6",
+   "name": "Intake runner 6",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "throttleA",
+   "name": "Throttle body \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Electronically controlled throttle at the rear of the plenum.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.4,
+    1.5,
+    -0.3
+   ]
+  },
+  {
+   "id": "intakeDuctA",
+   "name": "Intake duct \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Carbon duct from the airbox to the throttle body.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.5,
+    1.3,
+    -0.3
+   ]
+  },
+  {
+   "id": "airboxA",
+   "name": "Airbox and filter \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Filter housing fed from the active shoulder intake above it.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.6,
+    1.2,
+    -0.4
+   ]
+  },
+  {
+   "id": "plenumB",
+   "name": "Intake plenum \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Collector feeding six runners; the two plenums sit side by side in the V.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.35,
+    1.75,
+    0
+   ]
+  },
+  {
+   "id": "runnerB1",
+   "name": "Intake runner 7",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerB2",
+   "name": "Intake runner 8",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerB3",
+   "name": "Intake runner 9",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerB4",
+   "name": "Intake runner 10",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerB5",
+   "name": "Intake runner 11",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "runnerB6",
+   "name": "Intake runner 12",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Individual intake passage from the plenum to the cylinder head; its length tunes cylinder filling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.45,
+    1.4,
+    0
+   ]
+  },
+  {
+   "id": "throttleB",
+   "name": "Throttle body \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Electronically controlled throttle at the rear of the plenum.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.4,
+    1.5,
+    -0.3
+   ]
+  },
+  {
+   "id": "intakeDuctB",
+   "name": "Intake duct \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Carbon duct from the airbox to the throttle body.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.5,
+    1.3,
+    -0.3
+   ]
+  },
+  {
+   "id": "airboxB",
+   "name": "Airbox and filter \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Intake",
+   "summary": "Filter housing fed from the active shoulder intake above it.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.6,
+    1.2,
+    -0.4
+   ]
+  },
+  {
+   "id": "headerA1",
+   "name": "Exhaust header 1",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerA2",
+   "name": "Exhaust header 2",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerA3",
+   "name": "Exhaust header 3",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerA4",
+   "name": "Exhaust header 4",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerA5",
+   "name": "Exhaust header 5",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerA6",
+   "name": "Exhaust header 6",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "collectorA",
+   "name": "Exhaust collector \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Merges the six headers of this bank.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.9,
+    0.2,
+    -0.3
+   ]
+  },
+  {
+   "id": "catalystA",
+   "name": "Catalytic converter \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Cleans exhaust gas before the silencer.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.9,
+    0.1,
+    -0.5
+   ]
+  },
+  {
+   "id": "exhaustPipeA",
+   "name": "Exhaust pipe \u00b7 bank A",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Links the catalyst to the silencer.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.7,
+    0.1,
+    -0.7
+   ]
+  },
+  {
+   "id": "headerB1",
+   "name": "Exhaust header 7",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerB2",
+   "name": "Exhaust header 8",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerB3",
+   "name": "Exhaust header 9",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerB4",
+   "name": "Exhaust header 10",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerB5",
+   "name": "Exhaust header 11",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "headerB6",
+   "name": "Exhaust header 12",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Primary pipe from the exhaust port; equal lengths keep pulses evenly spaced.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -1.0,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "collectorB",
+   "name": "Exhaust collector \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Merges the six headers of this bank.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.9,
+    0.2,
+    -0.3
+   ]
+  },
+  {
+   "id": "catalystB",
+   "name": "Catalytic converter \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Cleans exhaust gas before the silencer.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.9,
+    0.1,
+    -0.5
+   ]
+  },
+  {
+   "id": "exhaustPipeB",
+   "name": "Exhaust pipe \u00b7 bank B",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Links the catalyst to the silencer.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.7,
+    0.1,
+    -0.7
+   ]
+  },
+  {
+   "id": "silencer",
+   "name": "Exhaust silencer",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Transverse silencer with valve-controlled bypass behind the engine.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "diffuser"
+   ],
+   "vector": [
+    0,
+    -0.2,
+    -1.0
+   ]
+  },
+  {
+   "id": "tailpipe",
+   "name": "Hexagonal exhaust outlet",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Single centre-mounted hexagonal outlet.",
+   "material": "Heat-resistant alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0,
+    0,
+    -1.2
+   ]
+  },
+  {
+   "id": "heatShield",
+   "name": "Exhaust heat shield",
+   "zone": "Aero",
+   "system": "03_Powertrain",
+   "assembly": "Exhaust",
+   "summary": "Protects the rear deck and airboxes from silencer heat.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0,
+    0.6,
+    -0.8
+   ]
+  },
+  {
+   "id": "radiatorL",
+   "name": "Coolant radiator \u00b7 left",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Side-mounted radiator behind the side intake.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "sideIntakeL"
+   ],
+   "vector": [
+    -1.0,
+    0.2,
+    0
+   ]
+  },
+  {
+   "id": "fanL",
+   "name": "Radiator fan \u00b7 left",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Electric fan pulling air through the radiator at low speed.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "radiatorL"
+   ],
+   "vector": [
+    -0.8,
+    0.2,
+    0
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     -0.9393727128473789,
+     0,
+     -0.34289780745545134
+    ],
+    "rate": 0.2
+   }
+  },
+  {
+   "id": "coolantHoseL",
+   "name": "Coolant hose \u00b7 left",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Carries hot coolant from the engine to the radiator.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.6,
+    0.5,
+    0.2
+   ]
+  },
+  {
+   "id": "radiatorR",
+   "name": "Coolant radiator \u00b7 right",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Side-mounted radiator behind the side intake.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "sideIntakeR"
+   ],
+   "vector": [
+    1.0,
+    0.2,
+    0
+   ]
+  },
+  {
+   "id": "fanR",
+   "name": "Radiator fan \u00b7 right",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Electric fan pulling air through the radiator at low speed.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "radiatorR"
+   ],
+   "vector": [
+    0.8,
+    0.2,
+    0
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0.9393727128473789,
+     0,
+     -0.34289780745545134
+    ],
+    "rate": 0.2
+   }
+  },
+  {
+   "id": "coolantHoseR",
+   "name": "Coolant hose \u00b7 right",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Carries hot coolant from the engine to the radiator.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.6,
+    0.5,
+    0.2
+   ]
+  },
+  {
+   "id": "waterPump",
+   "name": "Water pump",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Circulates coolant through both banks and the radiators.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0,
+    0.6,
+    0.7
+   ]
+  },
+  {
+   "id": "expansionTank",
+   "name": "Coolant expansion tank",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Header tank that absorbs coolant expansion.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.5,
+    1.0,
+    0.2
+   ]
+  },
+  {
+   "id": "oilTank",
+   "name": "Dry-sump oil tank",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Separate oil reservoir of the dry-sump system.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.6,
+    0.8,
+    0.3
+   ]
+  },
+  {
+   "id": "scavengePump",
+   "name": "Oil scavenge pump",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Multi-stage pump pulling oil from the sump back to the tank.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "floorPan"
+   ],
+   "vector": [
+    0.5,
+    -0.5,
+    0
+   ]
+  },
+  {
+   "id": "oilCooler",
+   "name": "Oil cooler",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Cooling_Lubrication",
+   "summary": "Cools engine oil using air from the left side intake.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "sideIntakeL"
+   ],
+   "vector": [
+    -1.0,
+    0.2,
+    0
+   ]
+  },
+  {
+   "id": "alternator",
+   "name": "Alternator",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Accessory_Drive",
+   "summary": "Charges the battery and powers the electrical system.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.6,
+    0.6,
+    -0.5
+   ]
+  },
+  {
+   "id": "alternatorPulley",
+   "name": "Alternator pulley",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Accessory_Drive",
+   "summary": "Belt-driven pulley.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0.6,
+    0.6,
+    -0.7
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 2.2
+   }
+  },
+  {
+   "id": "acCompressor",
+   "name": "A/C compressor",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Accessory_Drive",
+   "summary": "Compresses refrigerant for the cabin air conditioning.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.6,
+    0.6,
+    -0.5
+   ]
+  },
+  {
+   "id": "acCompressorPulley",
+   "name": "A/C compressor pulley",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Accessory_Drive",
+   "summary": "Belt-driven pulley.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.6,
+    0.6,
+    -0.7
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 2.2
+   }
+  },
+  {
+   "id": "drivePulley",
+   "name": "Accessory drive pulley",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Accessory_Drive",
+   "summary": "Gear-driven from the crank; turns the accessory belt.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0,
+    0.4,
+    -0.7
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1.4
+   }
+  },
+  {
+   "id": "accBelt",
+   "name": "Accessory drive belt",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Accessory_Drive",
+   "summary": "Ribbed belt linking the drive, alternator and compressor pulleys.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    0,
+    0.5,
+    -0.8
+   ]
+  },
+  {
+   "id": "starter",
+   "name": "Starter motor",
+   "zone": "Engine",
+   "system": "03_Powertrain",
+   "assembly": "Accessory_Drive",
+   "summary": "Turns the engine over through the flywheel ring gear.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "glassCover"
+   ],
+   "vector": [
+    -0.6,
+    0.2,
+    0.5
+   ]
+  },
+  {
+   "id": "crank",
+   "name": "Crankshaft",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Six-throw forged crank shared by both banks; each pin carries two side-by-side rods.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "sump",
+    "bedplate",
+    "blockA",
+    "blockB",
+    "mainCap1",
+    "mainCap2",
+    "mainCap3",
+    "mainCap4",
+    "mainCap5",
+    "mainCap6",
+    "mainCap7"
+   ],
+   "vector": [
+    0,
+    -0.25,
+    0
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   },
+   "spec": "Stroke 76.4 mm, throws at 120\u00b0 intervals"
+  },
+  {
+   "id": "flywheel",
+   "name": "Flywheel",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Smooths crank rotation; its ring gear is turned by the starter.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "bellhousing"
+   ],
+   "vector": [
+    0,
+    0,
+    0.9
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   }
+  },
+  {
+   "id": "pistonA1",
+   "name": "Piston 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": 30,
+    "throw": 0,
+    "centre": [
+     0,
+     0.32,
+     -0.647
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodA1",
+   "name": "Connecting rod 1",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": 30,
+    "throw": 0,
+    "centre": [
+     0,
+     0.32,
+     -0.647
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonA2",
+   "name": "Piston 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": 30,
+    "throw": 240,
+    "centre": [
+     0,
+     0.32,
+     -0.747
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodA2",
+   "name": "Connecting rod 2",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": 30,
+    "throw": 240,
+    "centre": [
+     0,
+     0.32,
+     -0.747
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonA3",
+   "name": "Piston 3",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": 30,
+    "throw": 120,
+    "centre": [
+     0,
+     0.32,
+     -0.847
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodA3",
+   "name": "Connecting rod 3",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": 30,
+    "throw": 120,
+    "centre": [
+     0,
+     0.32,
+     -0.847
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonA4",
+   "name": "Piston 4",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": 30,
+    "throw": 120,
+    "centre": [
+     0,
+     0.32,
+     -0.947
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodA4",
+   "name": "Connecting rod 4",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": 30,
+    "throw": 120,
+    "centre": [
+     0,
+     0.32,
+     -0.947
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonA5",
+   "name": "Piston 5",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": 30,
+    "throw": 240,
+    "centre": [
+     0,
+     0.32,
+     -1.047
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodA5",
+   "name": "Connecting rod 5",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": 30,
+    "throw": 240,
+    "centre": [
+     0,
+     0.32,
+     -1.047
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonA6",
+   "name": "Piston 6",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": 30,
+    "throw": 0,
+    "centre": [
+     0,
+     0.32,
+     -1.147
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodA6",
+   "name": "Connecting rod 6",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headA",
+    "blockA"
+   ],
+   "vector": [
+    0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": 30,
+    "throw": 0,
+    "centre": [
+     0,
+     0.32,
+     -1.147
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonB1",
+   "name": "Piston 7",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": -30,
+    "throw": 0,
+    "centre": [
+     0,
+     0.32,
+     -0.673
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodB1",
+   "name": "Connecting rod 7",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": -30,
+    "throw": 0,
+    "centre": [
+     0,
+     0.32,
+     -0.673
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonB2",
+   "name": "Piston 8",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": -30,
+    "throw": 240,
+    "centre": [
+     0,
+     0.32,
+     -0.773
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodB2",
+   "name": "Connecting rod 8",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": -30,
+    "throw": 240,
+    "centre": [
+     0,
+     0.32,
+     -0.773
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonB3",
+   "name": "Piston 9",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": -30,
+    "throw": 120,
+    "centre": [
+     0,
+     0.32,
+     -0.873
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodB3",
+   "name": "Connecting rod 9",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": -30,
+    "throw": 120,
+    "centre": [
+     0,
+     0.32,
+     -0.873
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonB4",
+   "name": "Piston 10",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": -30,
+    "throw": 120,
+    "centre": [
+     0,
+     0.32,
+     -0.973
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodB4",
+   "name": "Connecting rod 10",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": -30,
+    "throw": 120,
+    "centre": [
+     0,
+     0.32,
+     -0.973
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonB5",
+   "name": "Piston 11",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": -30,
+    "throw": 240,
+    "centre": [
+     0,
+     0.32,
+     -1.073
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodB5",
+   "name": "Connecting rod 11",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": -30,
+    "throw": 240,
+    "centre": [
+     0,
+     0.32,
+     -1.073
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "pistonB6",
+   "name": "Piston 12",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Forged piston with two compression rings and an oil ring; 95 mm diameter.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.45,
+    1.079,
+    0.0
+   ],
+   "kin": {
+    "type": "piston",
+    "bank": -30,
+    "throw": 0,
+    "centre": [
+     0,
+     0.32,
+     -1.173
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "rodB6",
+   "name": "Connecting rod 12",
+   "zone": "Internals",
+   "system": "03_Powertrain",
+   "assembly": "Rotating_Assembly",
+   "summary": "Links the piston to its crank pin; length here is illustrative (145 mm).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "headB",
+    "blockB"
+   ],
+   "vector": [
+    -0.35,
+    0.706,
+    0.0
+   ],
+   "kin": {
+    "type": "rod",
+    "bank": -30,
+    "throw": 0,
+    "centre": [
+     0,
+     0.32,
+     -1.173
+    ],
+    "stroke": 0.0764,
+    "rod": 0.145
+   }
+  },
+  {
+   "id": "bellhousing",
+   "name": "Clutch bellhousing",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Joins engine and gearbox and encloses the clutch.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.2,
+    0.5
+   ]
+  },
+  {
+   "id": "clutch",
+   "name": "Twin-plate clutch",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Dry twin-plate clutch actuated by the ISR system.",
+   "material": "Friction lining / metal plates; exact compound unverified",
+   "tone": "dark",
+   "blockedBy": [
+    "bellhousing"
+   ],
+   "vector": [
+    0,
+    0.1,
+    0.8
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   },
+   "spec": "Dry double-plate clutch, factory diameter 235 mm; mesh approximate"
+  },
+  {
+   "id": "gearboxCase",
+   "name": "7-speed ISR gearbox casing",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Independent Shifting Rods gearbox, mounted ahead of the engine in the tunnel; shifts in about 50 ms.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "tunnel"
+   ],
+   "vector": [
+    0,
+    -0.4,
+    0.7
+   ],
+   "spec": "7 forward gears, single clutch"
+  },
+  {
+   "id": "gearIn1",
+   "name": "Gear 1 \u00b7 input",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Input-shaft gear for 1st.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    0.3,
+    0.3,
+    0.5
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   }
+  },
+  {
+   "id": "gearOut1",
+   "name": "Gear 1 \u00b7 output",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Output-shaft gear; the ISR selects one pair at a time.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    -0.3,
+    -0.1,
+    0.5
+   ],
+   "kin": {
+    "type": "shaft",
+    "axis": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "gearIn2",
+   "name": "Gear 2 \u00b7 input",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Input-shaft gear for 2nd.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    0.3,
+    0.3,
+    0.5
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   }
+  },
+  {
+   "id": "gearOut2",
+   "name": "Gear 2 \u00b7 output",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Output-shaft gear; the ISR selects one pair at a time.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    -0.3,
+    -0.1,
+    0.5
+   ],
+   "kin": {
+    "type": "shaft",
+    "axis": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "gearIn3",
+   "name": "Gear 3 \u00b7 input",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Input-shaft gear for 3rd.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    0.3,
+    0.3,
+    0.5
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   }
+  },
+  {
+   "id": "gearOut3",
+   "name": "Gear 3 \u00b7 output",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Output-shaft gear; the ISR selects one pair at a time.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    -0.3,
+    -0.1,
+    0.5
+   ],
+   "kin": {
+    "type": "shaft",
+    "axis": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "gearIn4",
+   "name": "Gear 4 \u00b7 input",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Input-shaft gear for 4th.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    0.3,
+    0.3,
+    0.5
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   }
+  },
+  {
+   "id": "gearOut4",
+   "name": "Gear 4 \u00b7 output",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Output-shaft gear; the ISR selects one pair at a time.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    -0.3,
+    -0.1,
+    0.5
+   ],
+   "kin": {
+    "type": "shaft",
+    "axis": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "gearIn5",
+   "name": "Gear 5 \u00b7 input",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Input-shaft gear for 5th.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    0.3,
+    0.3,
+    0.5
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   }
+  },
+  {
+   "id": "gearOut5",
+   "name": "Gear 5 \u00b7 output",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Output-shaft gear; the ISR selects one pair at a time.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    -0.3,
+    -0.1,
+    0.5
+   ],
+   "kin": {
+    "type": "shaft",
+    "axis": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "gearIn6",
+   "name": "Gear 6 \u00b7 input",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Input-shaft gear for 6th.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    0.3,
+    0.3,
+    0.5
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   }
+  },
+  {
+   "id": "gearOut6",
+   "name": "Gear 6 \u00b7 output",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Output-shaft gear; the ISR selects one pair at a time.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    -0.3,
+    -0.1,
+    0.5
+   ],
+   "kin": {
+    "type": "shaft",
+    "axis": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "gearIn7",
+   "name": "Gear 7 \u00b7 input",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Input-shaft gear for 7th.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    0.3,
+    0.3,
+    0.5
+   ],
+   "kin": {
+    "type": "spin",
+    "axis": [
+     0,
+     0,
+     1
+    ],
+    "rate": 1
+   }
+  },
+  {
+   "id": "gearOut7",
+   "name": "Gear 7 \u00b7 output",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Output-shaft gear; the ISR selects one pair at a time.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "gearboxCase"
+   ],
+   "vector": [
+    -0.3,
+    -0.1,
+    0.5
+   ],
+   "kin": {
+    "type": "shaft",
+    "axis": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "isrActuator",
+   "name": "ISR shift actuator",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Hydraulic unit moving four independent shift rods.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "tunnel"
+   ],
+   "vector": [
+    0,
+    0.6,
+    0.4
+   ]
+  },
+  {
+   "id": "outputShaft",
+   "name": "Rear output shaft",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Transmission",
+   "summary": "Runs back from the gearbox through the sump to the rear differential.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "sump"
+   ],
+   "vector": [
+    0,
+    -0.7,
+    0
+   ]
+  },
+  {
+   "id": "rearDiff",
+   "name": "Rear differential",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Driveline",
+   "summary": "Mechanical limited-slip rear differential.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "floorPan"
+   ],
+   "vector": [
+    0,
+    -0.3,
+    -0.8
+   ]
+  },
+  {
+   "id": "propShaft",
+   "name": "Front propeller shaft",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Driveline",
+   "summary": "Carries drive forward from the gearbox to the Haldex coupling.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "floorPan"
+   ],
+   "vector": [
+    0,
+    -0.6,
+    0.3
+   ],
+   "kin": {
+    "type": "shaft",
+    "axis": [
+     0,
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "id": "haldex",
+   "name": "Haldex IV coupling",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Driveline",
+   "summary": "Electro-hydraulic multi-plate clutch that sends torque to the front axle when the rear slips.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "undertray"
+   ],
+   "vector": [
+    0,
+    -0.4,
+    0.7
+   ]
+  },
+  {
+   "id": "frontDiff",
+   "name": "Front differential",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Driveline",
+   "summary": "Open front differential driven through the Haldex coupling.",
+   "material": "Cast aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "undertray"
+   ],
+   "vector": [
+    0,
+    -0.3,
+    0.9
+   ]
+  },
+  {
+   "id": "halfShaftFL",
+   "name": "Half-shaft \u00b7 front left",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Driveline",
+   "summary": "Drive shaft with constant-velocity joints and boots at each end.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFL"
+   ],
+   "vector": [
+    -0.6,
+    -0.2,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "halfShaftFR",
+   "name": "Half-shaft \u00b7 front right",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Driveline",
+   "summary": "Drive shaft with constant-velocity joints and boots at each end.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFR"
+   ],
+   "vector": [
+    0.6,
+    -0.2,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "halfShaftRL",
+   "name": "Half-shaft \u00b7 rear left",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Driveline",
+   "summary": "Drive shaft with constant-velocity joints and boots at each end.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRL"
+   ],
+   "vector": [
+    -0.6,
+    -0.2,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "halfShaftRR",
+   "name": "Half-shaft \u00b7 rear right",
+   "zone": "Transmission",
+   "system": "03_Powertrain",
+   "assembly": "Driveline",
+   "summary": "Drive shaft with constant-velocity joints and boots at each end.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRR"
+   ],
+   "vector": [
+    0.6,
+    -0.2,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "tyreFL",
+   "name": "Tyre \u00b7 front left",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "255/35 ZR19 high-performance tyre.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [],
+   "vector": [
+    -1.3,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "wheelFL",
+   "name": "Forged wheel \u00b7 front left",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "19-inch forged aluminium wheel with five twin spokes.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "tyreFL"
+   ],
+   "vector": [
+    -1.3,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "wheelBoltsFL",
+   "name": "Wheel bolts \u00b7 front left",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "Five bolts clamping the wheel to the hub.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    -1.5,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "discFL",
+   "name": "Carbon-ceramic brake disc \u00b7 front left",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "400 mm ventilated carbon-ceramic disc.",
+   "material": "Carbon-ceramic (CCB)",
+   "tone": "dark",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.9,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "caliperFL",
+   "name": "Brake caliper \u00b7 front left",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "Six-piston monobloc caliper.",
+   "material": "Aluminium monobloc, painted",
+   "tone": "accent",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.9,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "steer"
+   }
+  },
+  {
+   "id": "padsFL",
+   "name": "Brake pads \u00b7 front left",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "Pair of friction pads squeezed against the disc by the caliper pistons.",
+   "material": "Brake friction compound; exact composition unverified",
+   "tone": "dark",
+   "blockedBy": [
+    "caliperFL"
+   ],
+   "vector": [
+    -0.9,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "steer"
+   }
+  },
+  {
+   "id": "uprightFL",
+   "name": "Upright / hub carrier \u00b7 front left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Aluminium upright carrying the wheel bearing, caliper and ball joints.",
+   "material": "Aluminium alloy; manufacturing process unverified",
+   "tone": "metal",
+   "blockedBy": [
+    "discFL",
+    "caliperFL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ],
+   "kin": {
+    "type": "steer"
+   }
+  },
+  {
+   "id": "hubFL",
+   "name": "Wheel hub \u00b7 front left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Bearing hub; the wheel and disc bolt to its flange.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "discFL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "lowerArmFL",
+   "name": "Lower wishbone \u00b7 front left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Lower control arm; the pushrod rises from its outer end.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "upperArmFL",
+   "name": "Upper wishbone \u00b7 front left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Upper control arm locating the top of the upright.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "pushrodFL",
+   "name": "Pushrod \u00b7 front left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Transfers wheel movement up to the inboard rocker; this is what makes it a pushrod suspension.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.5,
+    0.5,
+    0
+   ]
+  },
+  {
+   "id": "rockerFL",
+   "name": "Rocker (bellcrank) \u00b7 front left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Pivots on the frame and turns pushrod travel into horizontal damper travel.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.4,
+    0.6,
+    0
+   ]
+  },
+  {
+   "id": "damperFL",
+   "name": "Horizontal damper \u00b7 front left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Inboard, horizontally mounted damper (\u00d6hlins-supplied per press reports).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.3,
+    0.7,
+    0
+   ],
+   "kin": {
+    "type": "spring",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "springFL",
+   "name": "Coil spring \u00b7 front left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Steel coil spring around the damper body.",
+   "material": "Steel coil spring, painted",
+   "tone": "accent",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.3,
+    0.8,
+    0
+   ],
+   "kin": {
+    "type": "spring",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "tieRodFL",
+   "name": "Steering tie rod \u00b7 front left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Connects the steering rack to the upright steering arm.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "brakeLineFL",
+   "name": "Brake line \u00b7 front left",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Braided hose feeding brake fluid to the caliper.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [
+    "wheelFL",
+    "tyreFL"
+   ],
+   "vector": [
+    -0.6,
+    0.2,
+    0
+   ]
+  },
+  {
+   "id": "tyreFR",
+   "name": "Tyre \u00b7 front right",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "255/35 ZR19 high-performance tyre.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [],
+   "vector": [
+    1.3,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "wheelFR",
+   "name": "Forged wheel \u00b7 front right",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "19-inch forged aluminium wheel with five twin spokes.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "tyreFR"
+   ],
+   "vector": [
+    1.3,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "wheelBoltsFR",
+   "name": "Wheel bolts \u00b7 front right",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "Five bolts clamping the wheel to the hub.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    1.5,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "discFR",
+   "name": "Carbon-ceramic brake disc \u00b7 front right",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "400 mm ventilated carbon-ceramic disc.",
+   "material": "Carbon-ceramic (CCB)",
+   "tone": "dark",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.9,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "caliperFR",
+   "name": "Brake caliper \u00b7 front right",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "Six-piston monobloc caliper.",
+   "material": "Aluminium monobloc, painted",
+   "tone": "accent",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.9,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "steer"
+   }
+  },
+  {
+   "id": "padsFR",
+   "name": "Brake pads \u00b7 front right",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "Pair of friction pads squeezed against the disc by the caliper pistons.",
+   "material": "Brake friction compound; exact composition unverified",
+   "tone": "dark",
+   "blockedBy": [
+    "caliperFR"
+   ],
+   "vector": [
+    0.9,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "steer"
+   }
+  },
+  {
+   "id": "uprightFR",
+   "name": "Upright / hub carrier \u00b7 front right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Aluminium upright carrying the wheel bearing, caliper and ball joints.",
+   "material": "Aluminium alloy; manufacturing process unverified",
+   "tone": "metal",
+   "blockedBy": [
+    "discFR",
+    "caliperFR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ],
+   "kin": {
+    "type": "steer"
+   }
+  },
+  {
+   "id": "hubFR",
+   "name": "Wheel hub \u00b7 front right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Bearing hub; the wheel and disc bolt to its flange.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "discFR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "steer": true
+   }
+  },
+  {
+   "id": "lowerArmFR",
+   "name": "Lower wishbone \u00b7 front right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Lower control arm; the pushrod rises from its outer end.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "upperArmFR",
+   "name": "Upper wishbone \u00b7 front right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Upper control arm locating the top of the upright.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "pushrodFR",
+   "name": "Pushrod \u00b7 front right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Transfers wheel movement up to the inboard rocker; this is what makes it a pushrod suspension.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.5,
+    0.5,
+    0
+   ]
+  },
+  {
+   "id": "rockerFR",
+   "name": "Rocker (bellcrank) \u00b7 front right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Pivots on the frame and turns pushrod travel into horizontal damper travel.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.4,
+    0.6,
+    0
+   ]
+  },
+  {
+   "id": "damperFR",
+   "name": "Horizontal damper \u00b7 front right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Inboard, horizontally mounted damper (\u00d6hlins-supplied per press reports).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.3,
+    0.7,
+    0
+   ],
+   "kin": {
+    "type": "spring",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "springFR",
+   "name": "Coil spring \u00b7 front right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Steel coil spring around the damper body.",
+   "material": "Steel coil spring, painted",
+   "tone": "accent",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.3,
+    0.8,
+    0
+   ],
+   "kin": {
+    "type": "spring",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "tieRodFR",
+   "name": "Steering tie rod \u00b7 front right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Connects the steering rack to the upright steering arm.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "brakeLineFR",
+   "name": "Brake line \u00b7 front right",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Braided hose feeding brake fluid to the caliper.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [
+    "wheelFR",
+    "tyreFR"
+   ],
+   "vector": [
+    0.6,
+    0.2,
+    0
+   ]
+  },
+  {
+   "id": "tyreRL",
+   "name": "Tyre \u00b7 rear left",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "335/30 ZR20 high-performance tyre.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [],
+   "vector": [
+    -1.3,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "wheelRL",
+   "name": "Forged wheel \u00b7 rear left",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "20-inch forged aluminium wheel with five twin spokes.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "tyreRL"
+   ],
+   "vector": [
+    -1.3,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "wheelBoltsRL",
+   "name": "Wheel bolts \u00b7 rear left",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "Five bolts clamping the wheel to the hub.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    -1.5,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "discRL",
+   "name": "Carbon-ceramic brake disc \u00b7 rear left",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "380 mm ventilated carbon-ceramic disc.",
+   "material": "Carbon-ceramic (CCB)",
+   "tone": "dark",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.9,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "caliperRL",
+   "name": "Brake caliper \u00b7 rear left",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "Four-piston monobloc caliper.",
+   "material": "Aluminium monobloc, painted",
+   "tone": "accent",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.9,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "padsRL",
+   "name": "Brake pads \u00b7 rear left",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "Pair of friction pads squeezed against the disc by the caliper pistons.",
+   "material": "Brake friction compound; exact composition unverified",
+   "tone": "dark",
+   "blockedBy": [
+    "caliperRL"
+   ],
+   "vector": [
+    -0.9,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "uprightRL",
+   "name": "Upright / hub carrier \u00b7 rear left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Aluminium upright carrying the wheel bearing, caliper and ball joints.",
+   "material": "Aluminium alloy; manufacturing process unverified",
+   "tone": "metal",
+   "blockedBy": [
+    "discRL",
+    "caliperRL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "hubRL",
+   "name": "Wheel hub \u00b7 rear left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Bearing hub; the wheel and disc bolt to its flange.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "discRL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "lowerArmRL",
+   "name": "Lower wishbone \u00b7 rear left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Lower control arm; the pushrod rises from its outer end.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "upperArmRL",
+   "name": "Upper wishbone \u00b7 rear left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Upper control arm locating the top of the upright.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "pushrodRL",
+   "name": "Pushrod \u00b7 rear left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Transfers wheel movement up to the inboard rocker; this is what makes it a pushrod suspension.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.5,
+    0.5,
+    0
+   ]
+  },
+  {
+   "id": "rockerRL",
+   "name": "Rocker (bellcrank) \u00b7 rear left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Pivots on the frame and turns pushrod travel into horizontal damper travel.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.4,
+    0.6,
+    0
+   ]
+  },
+  {
+   "id": "damperRL",
+   "name": "Horizontal damper \u00b7 rear left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Inboard, horizontally mounted damper (\u00d6hlins-supplied per press reports).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.3,
+    0.7,
+    0
+   ],
+   "kin": {
+    "type": "spring",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "springRL",
+   "name": "Coil spring \u00b7 rear left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Steel coil spring around the damper body.",
+   "material": "Steel coil spring, painted",
+   "tone": "accent",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.3,
+    0.8,
+    0
+   ],
+   "kin": {
+    "type": "spring",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "toeLinkRL",
+   "name": "Toe link \u00b7 rear left",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Rear toe-control link that keeps the wheel tracking straight under load.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "brakeLineRL",
+   "name": "Brake line \u00b7 rear left",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Braided hose feeding brake fluid to the caliper.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [
+    "wheelRL",
+    "tyreRL"
+   ],
+   "vector": [
+    -0.6,
+    0.2,
+    0
+   ]
+  },
+  {
+   "id": "tyreRR",
+   "name": "Tyre \u00b7 rear right",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "335/30 ZR20 high-performance tyre.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [],
+   "vector": [
+    1.3,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "wheelRR",
+   "name": "Forged wheel \u00b7 rear right",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "20-inch forged aluminium wheel with five twin spokes.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "tyreRR"
+   ],
+   "vector": [
+    1.3,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "wheelBoltsRR",
+   "name": "Wheel bolts \u00b7 rear right",
+   "zone": "Wheels",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Wheels",
+   "summary": "Five bolts clamping the wheel to the hub.",
+   "material": "Polished steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    1.5,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "discRR",
+   "name": "Carbon-ceramic brake disc \u00b7 rear right",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "380 mm ventilated carbon-ceramic disc.",
+   "material": "Carbon-ceramic (CCB)",
+   "tone": "dark",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.9,
+    0,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "caliperRR",
+   "name": "Brake caliper \u00b7 rear right",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "Four-piston monobloc caliper.",
+   "material": "Aluminium monobloc, painted",
+   "tone": "accent",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.9,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "padsRR",
+   "name": "Brake pads \u00b7 rear right",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Brakes",
+   "summary": "Pair of friction pads squeezed against the disc by the caliper pistons.",
+   "material": "Brake friction compound; exact composition unverified",
+   "tone": "dark",
+   "blockedBy": [
+    "caliperRR"
+   ],
+   "vector": [
+    0.9,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "uprightRR",
+   "name": "Upright / hub carrier \u00b7 rear right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Aluminium upright carrying the wheel bearing, caliper and ball joints.",
+   "material": "Aluminium alloy; manufacturing process unverified",
+   "tone": "metal",
+   "blockedBy": [
+    "discRR",
+    "caliperRR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "hubRR",
+   "name": "Wheel hub \u00b7 rear right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Bearing hub; the wheel and disc bolt to its flange.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "discRR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ],
+   "kin": {
+    "type": "wheel",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "lowerArmRR",
+   "name": "Lower wishbone \u00b7 rear right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Lower control arm; the pushrod rises from its outer end.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "upperArmRR",
+   "name": "Upper wishbone \u00b7 rear right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Upper control arm locating the top of the upright.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "pushrodRR",
+   "name": "Pushrod \u00b7 rear right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Transfers wheel movement up to the inboard rocker; this is what makes it a pushrod suspension.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.5,
+    0.5,
+    0
+   ]
+  },
+  {
+   "id": "rockerRR",
+   "name": "Rocker (bellcrank) \u00b7 rear right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Pivots on the frame and turns pushrod travel into horizontal damper travel.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.4,
+    0.6,
+    0
+   ]
+  },
+  {
+   "id": "damperRR",
+   "name": "Horizontal damper \u00b7 rear right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Inboard, horizontally mounted damper (\u00d6hlins-supplied per press reports).",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.3,
+    0.7,
+    0
+   ],
+   "kin": {
+    "type": "spring",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "springRR",
+   "name": "Coil spring \u00b7 rear right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Steel coil spring around the damper body.",
+   "material": "Steel coil spring, painted",
+   "tone": "accent",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.3,
+    0.8,
+    0
+   ],
+   "kin": {
+    "type": "spring",
+    "axis": [
+     1,
+     0,
+     0
+    ]
+   }
+  },
+  {
+   "id": "toeLinkRR",
+   "name": "Toe link \u00b7 rear right",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Rear toe-control link that keeps the wheel tracking straight under load.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.6,
+    0.1,
+    0
+   ]
+  },
+  {
+   "id": "brakeLineRR",
+   "name": "Brake line \u00b7 rear right",
+   "zone": "Brakes",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Braided hose feeding brake fluid to the caliper.",
+   "material": "Rubber compound",
+   "tone": "rubber",
+   "blockedBy": [
+    "wheelRR",
+    "tyreRR"
+   ],
+   "vector": [
+    0.6,
+    0.2,
+    0
+   ]
+  },
+  {
+   "id": "antiRollF",
+   "name": "Anti-roll bar \u00b7 front",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Torsion bar linking left and right rockers to limit body roll.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0.9,
+    0.3
+   ]
+  },
+  {
+   "id": "antiRollR",
+   "name": "Anti-roll bar \u00b7 rear",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Suspension",
+   "summary": "Torsion bar linking left and right rockers to limit body roll.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0.9,
+    -0.3
+   ]
+  },
+  {
+   "id": "steeringRack",
+   "name": "Steering rack",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Steering",
+   "summary": "Rack-and-pinion steering with hydraulic assistance.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0,
+    0.3,
+    0.6
+   ]
+  },
+  {
+   "id": "steeringColumn",
+   "name": "Steering column",
+   "zone": "Suspension",
+   "system": "04_Suspension_Brakes",
+   "assembly": "Steering",
+   "summary": "Column with universal joints from the steering wheel to the rack pinion.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "dashboard"
+   ],
+   "vector": [
+    0,
+    0.5,
+    0.4
+   ]
+  },
+  {
+   "id": "undertray",
+   "name": "Front undertray",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Flat panel beneath the front frame.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.8,
+    0
+   ]
+  },
+  {
+   "id": "floorPan",
+   "name": "Centre floor",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Flat floor under the engine bay that feeds the diffuser.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.8,
+    0
+   ]
+  },
+  {
+   "id": "diffuser",
+   "name": "Rear diffuser",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Upswept rear floor that accelerates air under the car to create downforce.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.6,
+    -0.6
+   ]
+  },
+  {
+   "id": "diffFin1",
+   "name": "Diffuser strake",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Vertical strake that keeps diffuser flow from spilling sideways.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.165,
+    -0.6,
+    -0.6
+   ]
+  },
+  {
+   "id": "diffFin2",
+   "name": "Diffuser strake",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Vertical strake that keeps diffuser flow from spilling sideways.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.06,
+    -0.6,
+    -0.6
+   ]
+  },
+  {
+   "id": "diffFin3",
+   "name": "Diffuser strake",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Vertical strake that keeps diffuser flow from spilling sideways.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.06,
+    -0.6,
+    -0.6
+   ]
+  },
+  {
+   "id": "diffFin4",
+   "name": "Diffuser strake",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Vertical strake that keeps diffuser flow from spilling sideways.",
+   "material": "Carbon-fibre reinforced polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.165,
+    -0.6,
+    -0.6
+   ]
+  },
+  {
+   "id": "archLinerFL",
+   "name": "Wheel-arch liner \u00b7 front left",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Liner shielding the arch from stones and spray.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.5,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "archLinerFR",
+   "name": "Wheel-arch liner \u00b7 front right",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Liner shielding the arch from stones and spray.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.5,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "archLinerRL",
+   "name": "Wheel-arch liner \u00b7 rear left",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Liner shielding the arch from stones and spray.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    -0.5,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "archLinerRR",
+   "name": "Wheel-arch liner \u00b7 rear right",
+   "zone": "Aero",
+   "system": "05_Aero_Underbody",
+   "assembly": "Underbody",
+   "summary": "Liner shielding the arch from stones and spray.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [],
+   "vector": [
+    0.5,
+    0.3,
+    0
+   ]
+  },
+  {
+   "id": "seatL",
+   "name": "Sport seat \u00b7 driver",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Carbon-shell seat trimmed in leather and Alcantara.",
+   "material": "Leather / Alcantara",
+   "tone": "dark",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    1.2,
+    0
+   ]
+  },
+  {
+   "id": "beltL",
+   "name": "Seat belt \u00b7 driver",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Three-point belt anchored to the tub.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    1.2,
+    0
+   ]
+  },
+  {
+   "id": "seatR",
+   "name": "Sport seat \u00b7 passenger",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Carbon-shell seat trimmed in leather and Alcantara.",
+   "material": "Leather / Alcantara",
+   "tone": "dark",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    1.2,
+    0
+   ]
+  },
+  {
+   "id": "beltR",
+   "name": "Seat belt \u00b7 passenger",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Three-point belt anchored to the tub.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    1.2,
+    0
+   ]
+  },
+  {
+   "id": "steeringWheel",
+   "name": "Steering wheel",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Leather-rimmed wheel; the column runs to the front rack.",
+   "material": "Leather / Alcantara",
+   "tone": "dark",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    0.9,
+    0.3
+   ]
+  },
+  {
+   "id": "paddleL",
+   "name": "Shift paddle \u00b7 downshift",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Column-mounted aluminium paddle for the ISR gearbox.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    -0.2,
+    0.9,
+    0.3
+   ]
+  },
+  {
+   "id": "paddleR",
+   "name": "Shift paddle \u00b7 upshift",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Column-mounted aluminium paddle for the ISR gearbox.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0.2,
+    0.9,
+    0.3
+   ]
+  },
+  {
+   "id": "dashboard",
+   "name": "Dashboard",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Wraparound dash in front of both seats.",
+   "material": "Leather / Alcantara",
+   "tone": "dark",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    1.2,
+    0
+   ]
+  },
+  {
+   "id": "cluster",
+   "name": "TFT instrument cluster",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Configurable TFT display with selectable layouts per drive mode.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    -0.2,
+    1.3,
+    0.2
+   ]
+  },
+  {
+   "id": "console",
+   "name": "Centre console",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Runs down the tunnel between the seats; holds the switch gear.",
+   "material": "Leather / Alcantara",
+   "tone": "dark",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    1.0,
+    0.2
+   ]
+  },
+  {
+   "id": "startCover",
+   "name": "Start-button flap",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Red flip cover over the engine start button, inspired by fighter-jet controls.",
+   "material": "Painted alloy",
+   "tone": "accent",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    1.4,
+    0.2
+   ]
+  },
+  {
+   "id": "pedalBrake",
+   "name": "Brake pedal",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Aluminium pedal; there is no clutch pedal with the ISR gearbox.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    0.8,
+    0.4
+   ]
+  },
+  {
+   "id": "pedalThrottle",
+   "name": "Throttle pedal",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Aluminium pedal; there is no clutch pedal with the ISR gearbox.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    0.8,
+    0.4
+   ]
+  },
+  {
+   "id": "rearMirror",
+   "name": "Rear-view mirror",
+   "zone": "Interior",
+   "system": "06_Interior",
+   "assembly": "Cockpit",
+   "summary": "Interior mirror on the windscreen header.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "roof"
+   ],
+   "vector": [
+    0,
+    1.4,
+    0.2
+   ]
+  },
+  {
+   "id": "battery",
+   "name": "Battery",
+   "zone": "Electrical",
+   "system": "07_Electrical",
+   "assembly": "Electrical",
+   "summary": "12 V battery in the front luggage bay.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "frontLid"
+   ],
+   "vector": [
+    0,
+    0.9,
+    0.5
+   ]
+  },
+  {
+   "id": "fuelTank",
+   "name": "Fuel tank",
+   "zone": "Electrical",
+   "system": "07_Electrical",
+   "assembly": "Electrical",
+   "summary": "Illustrative fuel-tank placeholder; its shape, capacity, position and filler routing are not verified.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "frontLid"
+   ],
+   "vector": [
+    0,
+    0.8,
+    0.6
+   ]
+  },
+  {
+   "id": "fuelPump",
+   "name": "Fuel pump",
+   "zone": "Electrical",
+   "system": "07_Electrical",
+   "assembly": "Electrical",
+   "summary": "In-tank pump delivering fuel to the engine.",
+   "material": "Steel",
+   "tone": "metal",
+   "blockedBy": [
+    "fuelTank"
+   ],
+   "vector": [
+    0,
+    0.9,
+    0.5
+   ]
+  },
+  {
+   "id": "ecuL",
+   "name": "Engine control unit \u00b7 bank B",
+   "zone": "Electrical",
+   "system": "07_Electrical",
+   "assembly": "Electrical",
+   "summary": "One of two ECUs; each manages fuel and ignition for one bank.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    -0.4,
+    1.0,
+    0.3
+   ]
+  },
+  {
+   "id": "ecuR",
+   "name": "Engine control unit \u00b7 bank A",
+   "zone": "Electrical",
+   "system": "07_Electrical",
+   "assembly": "Electrical",
+   "summary": "One of two ECUs; each manages fuel and ignition for one bank.",
+   "material": "Aluminium alloy",
+   "tone": "metal",
+   "blockedBy": [],
+   "vector": [
+    0.4,
+    1.0,
+    0.3
+   ]
+  },
+  {
+   "id": "batteryCable",
+   "name": "Main battery cable",
+   "zone": "Electrical",
+   "system": "07_Electrical",
+   "assembly": "Electrical",
+   "summary": "Heavy cable from the front battery along the tub to the starter.",
+   "material": "Insulated conductor; exact construction unverified",
+   "tone": "accent",
+   "blockedBy": [],
+   "vector": [
+    0,
+    -0.4,
+    0
+   ]
+  },
+  {
+   "id": "fuseBox",
+   "name": "Fuse and relay box",
+   "zone": "Electrical",
+   "system": "07_Electrical",
+   "assembly": "Electrical",
+   "summary": "Front power distribution centre.",
+   "material": "Engineering polymer",
+   "tone": "dark",
+   "blockedBy": [
+    "frontLid"
+   ],
+   "vector": [
+    0,
+    0.9,
+    0.5
+   ]
+  }
+ ]
+}
