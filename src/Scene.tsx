@@ -4,7 +4,7 @@ import {CameraControls,Edges,Html,Line,PerspectiveCamera,OrthographicCamera,useG
 import * as T from 'three';
 import {parts,MODEL_URL,type Part} from './parts';
 import {useStore} from './store';
-import {ratios,revealProgress,crankPose,partAppearance,prioritizeFocusedHits} from './mechanics.mjs';
+import {ratios,advanceMotion,revealProgress,crankPose,partAppearance,prioritizeFocusedHits} from './mechanics.mjs';
 const vertex=`varying vec3 n; void main(){n=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}`;
 const fragment=`varying vec3 n; uniform vec3 base; uniform float alpha; void main(){float l=abs(dot(normalize(n),normalize(vec3(.4,.8,1.))));float tone=floor((l*.5+.5)*4.)/4.;float hatch=step(.78,fract((gl_FragCoord.x+gl_FragCoord.y)*.14));vec3 c=base*mix(.53,1.,tone);c*=1.-hatch*(1.-tone)*.22;gl_FragColor=vec4(c,alpha);}`;
 // Paper / blueprint colour per material tone from the Blender manifest.
@@ -12,8 +12,8 @@ const TONES:Record<string,[string,string]>={paint:['#D40000','#D40000'],dark:['#
 const ENGINE=new Set(['Engine','Internals']);
 const X=new T.Vector3(1,0,0),Y=new T.Vector3(0,1,0);
 // One clock for the whole drivetrain so every part shares the same crank angle.
-const motion={theta:0,shaft:0,wheel:0};
-function Driver(){useFrame((_,dt)=>{dt=Math.min(dt,.05);const s=useStore.getState();const w=(s.rpm?(s.slow?10:s.rpm):0)*Math.PI/30*dt;motion.theta+=w;motion.shaft+=w/ratios[s.gear];motion.wheel+=w/ratios[s.gear]/3.5;});return null;}
+const motion={theta:0,shaft:0,frontWheel:0,rearWheel:0};
+function Driver(){useFrame((_,dt)=>{const s=useStore.getState();advanceMotion(motion,dt,s.rpm,s.gear,s.slow);},-1);return null;}
 const ghostOf=(zone:string,peel:number,view:string)=>zone==='Body'?peel>=25||view!=='Isometric':['Aero','Interior','Chassis','Electrical'].includes(zone)?peel>=50||(zone==='Aero'&&view==='Undercarriage'):['Engine','Transmission'].includes(zone)?peel>=75:false;
 const openOf=(s:ReturnType<typeof useStore.getState>,t?:string)=>t==='cover'?s.hoodOpen:t==='doors'?s.doorsOpen:t==='frontLid'?s.lidOpen:false;
 
@@ -38,8 +38,9 @@ function PartMesh({p,src}:{p:Part;src:T.Mesh}){
   const steer=s.steering*Math.PI/180;
   switch(k?.type){
    case 'spin':mesh.quaternion.premultiply(tmp.q.setFromAxisAngle(axis,motion.theta*(k.rate??1)));break;
-   case 'shaft':mesh.quaternion.premultiply(tmp.q.setFromAxisAngle(axis,motion.shaft));break;
-   case 'wheel':mesh.quaternion.premultiply(tmp.q.setFromAxisAngle(axis,motion.wheel));if(k.steer)mesh.quaternion.premultiply(tmp.q.setFromAxisAngle(Y,steer));break;
+   // Constant-mesh output gears freewheel at their own ratio; only the selected pair drives the shaft.
+   case 'shaft':mesh.quaternion.premultiply(tmp.q.setFromAxisAngle(axis,p.id.startsWith('gearOut')?-motion.theta/ratios[Number(p.id.slice(7))]:motion.shaft));break;
+   case 'wheel':mesh.quaternion.premultiply(tmp.q.setFromAxisAngle(axis,rest.pos.z>0?motion.frontWheel:motion.rearWheel));if(k.steer)mesh.quaternion.premultiply(tmp.q.setFromAxisAngle(Y,steer));break;
    case 'steer':mesh.quaternion.premultiply(tmp.q.setFromAxisAngle(Y,steer));break;
    case 'hinge':hinge.current=T.MathUtils.damp(hinge.current,openOf(s,k.trigger)?1:0,5,dt);mesh.quaternion.premultiply(tmp.q.setFromAxisAngle(axis,(k.angle??1)*hinge.current));break;
    case 'piston':mesh.position.set(...crankPose(k,motion.theta).wrist as [number,number,number]);break;

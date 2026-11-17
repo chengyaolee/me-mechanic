@@ -3,6 +3,12 @@ import assert from 'node:assert/strict';
 import {useStore} from '../src/store.ts';
 import {partAppearance,prioritizeFocusedHits} from '../src/mechanics.mjs';
 
+test('the engine starts stopped in neutral with real-time animation',()=>{
+ assert.equal(useStore.getState().slow,false);
+ assert.equal(useStore.getState().gear,0);
+ assert.equal(useStore.getState().rpm,0);
+});
+
 test('selection, focus, switching, removal and reset share consistent transitions',()=>{
  const initial=useStore.getState();
  const state=()=>useStore.getState();

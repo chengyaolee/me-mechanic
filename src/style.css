@@ -2,6 +2,22 @@
 .accuracy-note{font-size:10px;color:var(--muted)}
 .inspector{min-width:0;overflow-wrap:anywhere;max-height:620px;overflow-y:auto}
 button:disabled{opacity:.45;cursor:default}
+.operation small{line-height:1.6;letter-spacing:.3px}
+.drive-explanation{font-size:11px;line-height:1.6;color:var(--muted);margin:8px 0}
+.readouts strong{font-size:24px;font-variant-numeric:tabular-nums}
+.engine-audio{display:flex;align-items:center;gap:6px;margin-top:12px}
+.engine-audio span{font-size:11px}
+.engine-audio small{font-size:8px;margin-top:3px}
+.sound-button{flex-shrink:0;width:76px;height:76px;padding:0;border:0;border-radius:50%;color:#b56237}
+.sound-button svg{width:100%;height:100%;overflow:visible}
+.sound-track,.sound-progress{fill:none;stroke-width:2}
+.sound-track{stroke:var(--line)}
+.sound-progress{stroke:currentColor;stroke-linecap:round;transition:stroke-dashoffset .2s linear}
+.sound-icon{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sound-time{font:11px monospace;fill:currentColor;text-anchor:middle;dominant-baseline:central;paint-order:stroke;stroke:#f7f6ef;stroke-width:5;stroke-linejoin:round}
+.dark .sound-time{stroke:#142733}
+.sound-button:hover .sound-time{stroke:#e8e6db}
+.dark .sound-button:hover .sound-time{stroke:#30434d}
 
 /* Keep navigation and the assembly tray accessible at every screen size. */
 .app{padding-bottom:90px}

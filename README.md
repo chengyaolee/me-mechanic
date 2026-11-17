@@ -17,7 +17,9 @@ The first study is a reconstructed Lamborghini Aventador LP 700–4, with 431 se
 - Hover over a component or its name in the assembly index to see its details. Click once to select it, again to focus on it, and once more to return to the previous view.
 - Open the doors, front lid and engine cover, or reveal the V12 internals. Use depth peel and the explode slider to look inside the assembly.
 - Remove and reinstall parts, optionally enforcing the model's illustrative removal order.
-- Run the engine and adjust engine speed, gear, steering and suspension travel. Slow motion makes the moving geometry easier to follow.
+- Run the engine and adjust engine speed, gear, steering and suspension travel. Animation runs in real time by default; optional slow motion holds the visual crank speed at 10 RPM while readouts show target speeds. At high RPM, screen refresh rates can make rotation appear slow or stationary.
+- The RPM slider sets crankshaft speed. Selecting a gear holds that RPM and changes wheel speed through the illustrative gear and 3.5:1 rear final-drive ratios; Neutral disconnects the wheels. This is a steady-state teaching rig with an ideal engaged clutch, not an acceleration or gearshift simulation. Front and rear wheel RPM account for their different nominal tire diameters at the same road speed.
+- Play the Aventador driving recording with the sound button. Its elapsed timestamp travels around the circular progress ring. The recording plays independently of engine RPM; `public/audio/aventador/driving.mp3` is extracted without re-encoding from the supplied MOV.
 - Switch camera views, perspective, and the paper or blueprint theme.
 
 ## Getting started
